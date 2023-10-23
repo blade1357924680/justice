@@ -1,0 +1,52 @@
+.button {
+  width: 141px;
+  font-size: 16px;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 800;
+  background: linear-gradient(317deg, #26FFF2 13.2%, #326CFF 71.54%);
+  border: none;
+  color: #ffffff;
+  border-radius: 27px;
+  padding: 15px 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.1s;
+
+  &:hover {
+    @include lg {
+      background: linear-gradient(-317deg, #26FFF2 13.2%, #326CFF 71.54%);
+    }
+  }
+
+  &_icon {
+    &:before {
+      content: '';
+      display: inline-block;
+      background: url(./assets/icon-arrow.svg) no-repeat;
+      width: 20px;
+      left: 30px;
+      top: 15px;
+      height: 26px;
+      position: absolute;
+    }
+
+    span {
+      padding-left: 35px;
+    }
+  }
+
+  &_big {
+    width: 195px;
+    background: #ffffff;
+    color: #323232;
+    border: 1px solid #ffffff;
+
+    &:hover {
+      @include lg {
+        background: transparent;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+      }
+    }
+  }
+}
